@@ -31,7 +31,7 @@ LUC processes unit expressions in several steps:
 
 ## Detailed Logic
 
-1. Unit Argument Filtering
+#### Unit Argument Filtering
 
 The input is first validated to ensure it contains only allowed characters:
 
@@ -39,7 +39,7 @@ The input is first validated to ensure it contains only allowed characters:
 - Digits (0–9)
 - Symbols: *, /, ^, (, ), -, .
 
-2. Tokenization
+#### Tokenization
 
 The input string is split into tokens representing:
 
@@ -55,7 +55,7 @@ kg*m^2/(s^2*A)
 Tokens:
 ["kg", "*", "m", "^", "2", "/", "(", "s", "^", "2", "*", "A", ")"]
 
-3. Composite Unit Expansion
+#### Composite Unit Expansion
 
 Some units are internally defined in terms of base units.
 
@@ -71,12 +71,12 @@ becomes:
 
 ["kg", "*", "m", "/", "s", "^", "2"]
 
-4. Unit and Number Validation
+#### Unit and Number Validation
 
 All unit symbols must exist in the internal database
 Decimal values must be valid numbers
 
-5. Shunting-Yard Algorithm
+#### Shunting-Yard Algorithm
 
 The expression is converted from infix to postfix notation.
 
@@ -94,14 +94,14 @@ Unit example:
 
 ["kg", "m", "2", "^", "*", "s", "2", "^", "A", "*", "/"]
 
-6. Syntax Validation
+#### Syntax Validation
 
 Rules include:
 
 Exponents must be numeric (e.g., m^2 is valid, m^s is not)
 Multiplication and division can combine units and numbers
 
-7. Dimensional Analysis
+#### Dimensional Analysis
 
 LUC extracts the exponent of each base unit to build a dimension vector.
 
@@ -109,7 +109,7 @@ Operations on units are handled through:
 
 Luc::dimension_operator
 
-8. Conversion Calculation
+#### Conversion Calculation
 
 Each unit is reduced to its base representation.
 
