@@ -1,6 +1,17 @@
 
 # LUC (LUC Unit Converter)
 
+```
+ /$$           /$$   /$$     /$$$$$$    
+| $$          | $$  | $$    /$$__  $$   
+| $$          | $$  | $$   | $$  \__/   
+| $$          | $$  | $$   | $$         
+| $$          | $$  | $$   | $$         
+| $$          | $$  | $$   | $$    $$   
+| $$$$$$$$ /$$|  $$$$$$//$$|  $$$$$$//$$
+|________/|__/ \______/|__/ \______/|__/
+```
+
 LUC is a simple C++ application for unit conversion and others things that I am still thinking about LOL. It supports both physical unit conversions and (in the future) currency conversion.
 
 I build this to learn a little bit C++, so the code is very trashy I'm sorry. Feedback and suggestions are very welcome!
