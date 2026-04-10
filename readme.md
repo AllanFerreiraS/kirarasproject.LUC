@@ -144,3 +144,7 @@ Becomes:
 ## Feedback
 
 If you have suggestions, ideas, or book recommendations, feel free to reach out!
+
+## ©️ License
+
+This work is licensed under [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html?ref=itsfoss.com).
